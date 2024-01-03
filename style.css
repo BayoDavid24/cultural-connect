@@ -15,21 +15,22 @@ section{
     display: flex;
     align-items: center;
     justify-content: center;
-    background-color: darkslategray;
+    background-color: #02080c;
     flex-direction: column;
-    padding: 50px 0;
+    padding: 2px 0;
 }
 
 section h1{
-    color: slategray;
+    color: #7397b1;
     text-align: center;
     width: 100%;
     font-size: 50px;
     margin-bottom: 10px;
+    
 }
 
 section p{
-    color: slategray;
+    color: #7397b1;
     text-align: center;
     width: 100%;
     margin-bottom: 40px;    
@@ -43,11 +44,17 @@ section p{
 }
 
 .texts p{
-    color: black;
+    color: #fff;
     text-align: left;
-    background-color: white;
+    background-color: #082132;
     width: 100%;
     padding: 10px;
     border-radius: 8px;
     margin-bottom: 10px;
+}
+
+.texts p.reply{
+    background-color: #16537e;
+    color: #fff;
+    text-align: right;
 }
