@@ -17,8 +17,20 @@ recognition.addEventListener('result', (e) => {
             texts.appendChild(p);
    
                 if(e.results[0].isFinal){
+                  if(text.includes('hello')){
                     p=document.createElement('p');
+                    p.classList.add('reply');
+                    p.innerText = 'Hi';
+                    texts.appendChild(p);
                 }
+                else if(text.includes('what is your name')){
+                    p=document.createElement('p');
+                    p.classList.add('reply');
+                    p.innerText = 'The Name is Tolu';
+                    texts.appendChild(p);
+                }
+                p=document.createElement('p');
+            }  
 
             console.log(text);
 })
